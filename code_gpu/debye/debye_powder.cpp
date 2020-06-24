@@ -42,7 +42,7 @@
 
 // Macros for OpenCL versions
 #define OPENCL_VERSION_1_2  1.2f
-#define OPENCL_VERSION_2_2  2.0f
+#define OPENCL_VERSION_2_2  2.2f
 
 /* This function helps to create informative messages in
  * case when OpenCL errors occur. It returns a string
