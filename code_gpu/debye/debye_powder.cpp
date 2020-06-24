@@ -384,7 +384,7 @@ cl_platform_id FindOpenCLPlatform(const char* preferredPlatform, cl_device_type 
 /*
  * This function read the OpenCL platdorm and device versions
  * (using clGetxxxInfo API) and stores it in the ocl structure.
- * Later it will enable us to support both OpenCL 1.2 and 2.0 platforms and devices
+ * Later it will enable us to support both OpenCL 1.2 and 2.2 platforms and devices
  * in the same program.
  */
 int GetPlatformAndDeviceVersion(cl_platform_id platformId, ocl_args_d_t *ocl)
@@ -470,24 +470,6 @@ int GetPlatformAndDeviceVersion(cl_platform_id platformId, ocl_args_d_t *ocl)
 
 	return err;
 }
-
-
-/*
- * Transfer the q values from sourceArray to input_q_Array
- */
- /*void generateInput_q(cl_float* input_q_Array, cl_float* sourceArray, cl_uint arrayWidth, cl_uint arrayHeight, cl_uint actualNum)
- {
-	 // initialization of input, actual part and rest being set to 0
-	 cl_uint array_size = arrayWidth * arrayHeight;
-	 for (cl_uint i = 0; i < actualNum; i++)
-	 {
-		 input_q_Array[i] = sourceArray[i];
-	 }
-	 for (cl_uint i = actualNum; i < array_size; i++)
-	 {
-		 input_q_Array[i] = 0.0;
-	 }
- }*/
 
 
  /*
@@ -661,7 +643,7 @@ int CreateBufferArguments_r(ocl_args_d_t *ocl, cl_float* inputA, cl_float* input
 	desc.image_slice_pitch = 0;
 	desc.num_mip_levels = 0;
 	desc.num_samples = 0;
-#ifdef CL_VERSION_2_0
+#ifdef CL_VERSION_2_2
 	desc.mem_object = NULL;
 #else
 	desc.buffer = NULL;
