@@ -1,3 +1,12 @@
+/**********************************************************
+ * scattering photography I(X, Y)
+ * rotation method (fixed wavelength, varying angle)
+ * rotation, on a cylider
+ * the code reads xyz coordinates of particles from
+ * one configuration file config.xyz
+ * 
+ * Dingning Li and Kai Zhang, Duke Kunshan University, 2020
+ **********************************************************/
 /*****************************************************************************
  * Copyright (c) 2013-2016 Intel Corporation
  * All rights reserved.
