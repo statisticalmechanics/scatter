@@ -1,7 +1,7 @@
 /**********************************************************
  * scattering photography I(X, Y)
  * white color (fixed angle, varying wavelength)
- * backward reflection
+ * backward reflection & forward reflection
  * the code reads xyz coordinates of particles from
  * one configuration file config.xyz
  * 
@@ -42,7 +42,7 @@ int main(void) {
 	double sum_sin;
 	double sum_cos;
 
-	printf("Front of Back_\n");
+	printf("Front (0) of Back (1)_\n");
 	scanf("%d", &forb);
 	printf("Input LOWER limit for wavelength_\n");
 	scanf("%lf", &lambda_min);
