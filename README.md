@@ -1,7 +1,7 @@
 # scatter
 scattering and structure factor
 
-Unifying Concepts of Scattering  and  Structure Factor in  Ordered and Disordered Samples
+Unifying the Concepts of Scattering  and  Structure Factor in  Ordered and Disordered Samples
 
 Dingning Li and Kai Zhang
 
