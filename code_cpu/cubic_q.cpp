@@ -1,5 +1,5 @@
 /**********************************************************
- * scattering photography I(X, Y)
+ * scattering result S(q)
  * choosing q on a cubic (fixed angle, varying wavelength)
  * backward reflection
  * the code reads xyz coordinates of particles from
