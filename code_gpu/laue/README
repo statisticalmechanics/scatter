@@ -26,4 +26,5 @@ to your device.
 ********************** SPECIFIC INFO **************************
 Input: config.xyz	only supports single configuration
 Output: Ixy.dat		with the form "x y Intensity"
-Use laue method, supports forward or back reflection, 
+Use laue method, supports forward or back reflection, only supports
+point scattering potentials
