@@ -1,5 +1,4 @@
 # scatter
-scattering and structure factor
 
 Unifying the Concepts of Scattering  and  Structure Factor in  Ordered and Disordered Samples
 
