@@ -4,8 +4,22 @@
  * backward reflection
  * the code reads xyz coordinates of particles from
  * one configuration file config.xyz
- * 
+ *
  * Dingning Li and Kai Zhang, Duke Kunshan University, 2020
+ *
+ * DISCLAIMER
+ * 
+ * The authors make no warranties about the code and disclaim
+ * liability for all uses of the code; In no event should authors
+ * being responsible for any kind of damages caused by using 
+ * this code.
+ *
+ * Reference
+ *
+ * This piece of code is dapted and modified from:
+ * https://github.com/wouterbuytenhuijs/Hellow-World-OpenCL/blob/f9d3027b208fe6cedb7768cb792e465e7b3c51ab/HelloWorld/GPUOpenCLProjectforWindows.cpp
+ * see the disclaimer below for more information
+ *
  **********************************************************/
 
 /*****************************************************************************
@@ -39,14 +53,10 @@
 #include "utils.h"
 
 
-#define MAX_PARTICLE_NUMBER 1000000
-#define MAX_X_RESOLUTION 1000
-#define MAX_Y_RESOLUTION 1000
-#define MAX_WAVELENGTH_RANGE 5.0
 #define Wavenumber_Increment 0.01
-#define M_PI 3.14159265358979323846
 // Macros for OpenCL versions
 #define OPENCL_VERSION_1_2  1.2f
+//#define OPENCL_VERSION_2_0  2.0f
 #define OPENCL_VERSION_2_2  2.2f
 
 /* This function helps to create informative messages in
@@ -599,7 +609,7 @@ int CreateAndBuildProgram(ocl_args_d_t *ocl)
 	// The size of the C program is returned in sourceSize
 	char* source = NULL;
 	size_t src_size = 0;
-	err = ReadSourceFromFile("Template.cl", &source, &src_size);
+	err = ReadSourceFromFile("code_kernel.cl", &source, &src_size);
 	if (CL_SUCCESS != err)
 	{
 		printf("Error: ReadSourceFromFile returned %s.\n", TranslateOpenCLError(err));
@@ -970,7 +980,7 @@ int main(int argc, wchar_t* argv[])
 	printf("Input UPPER limit for wavelength_\n");
 	scanf("%f", &lambda_max);
 
-	printf("Input number of particles, any value bigger than %d is illegal_\n", MAX_PARTICLE_NUMBER);
+	printf("Input number of particles_\n", );
 	scanf("%d", &num_Particles);
 	printf("Input Width_\n");
 	scanf("%d", &Width);
@@ -1143,7 +1153,7 @@ int main(int argc, wchar_t* argv[])
 
 
 	FILE *output;
-	if ((output = fopen("out", "a")) == NULL)
+	if ((output = fopen("Ixy.dat", "a")) == NULL)
 	{
 		printf("Open Failed.\n");
 		return 1;
@@ -1158,7 +1168,6 @@ int main(int argc, wchar_t* argv[])
 	fclose(output);
 
 	//printf("------------------------------- ALL DONE. -------------------------------");
-	//while (scanf("%d", &pause_variable) == 1);
 	free(rx);
 	free(ry);
 	free(rz);
