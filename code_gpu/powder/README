@@ -1,1 +1,32 @@
+********************** PUBLIC INFO **************************
+# WHAT'S IN THESE FILES
+utils.cpp contains useful functions; the file end with .cl 
+contains parallel code for kernel; the other file end with
+.cpp contains main function and some other functions for 
+setting up OpenCL.
 
+# HOW TO COMPILE:
+In order to compile this code, devices with OpenCL 
+https://www.khronos.org/opencl/ is needed. The library for 
+OpenCL "libOpenCL.so" might not be in the same directory for
+each machine, or might not have the same name. 
+Therefore, you may need to set the path to the library file
+in "makefile" by hand. i.e. first make sure the device supports
+OpenCL, then find where the library is.
+
+# HOW TO SET THE CODE APPROPRIATE TO YOUR MACHINE:
+Apart from modifying "makefile", platform also need to be 
+modified. This is done by searching for function 
+"FindOpenCLPlatform" in sorce cpp code, in "SetupOpenCL" 
+function. Function "FindOpenCLPlatform" has two variables,
+the first is the name for platform. You may change it according
+to your device.
+
+
+********************** SPECIFIC INFO **************************
+Input: config.xyz	supports multiple configurations
+Output: Sq.dat		with the form "q S(q)"
+Use powder method, supports forward & back reflection, supports
+point, sphere, gaussian scattering potentials
+
+Points chosen on sphere, can be chosen randomly or evenly.
