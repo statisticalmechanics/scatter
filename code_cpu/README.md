@@ -1,6 +1,6 @@
-****** Illustrations for How to use the codes ******
+/****** Illustrations for How to use the codes ******/
 
-*************** general introduction ***************
+/*************** general introduction ***************/
 
 The three pieces of codes here are program that uses 
 CPU to calculate the diffraction pattern of an arbitrary 
@@ -8,7 +8,7 @@ sample. Variables and principles are based on the paper
 https://arxiv.org/abs/2010.06126
 I will refer to the paper in later section as THE PAPER.
 
-******************* whitexray.cpp *******************
+/******************* whitexray.cpp *******************/
 
 This piece of code is based on Laue method, details 
 has been introduced in our paper, section 6.1 & 5.1.
@@ -43,7 +43,7 @@ has been introduced in our paper, section 6.1 & 5.1.
 	The unit should consist with the previous two input
 	values.
 
-***************** powder_even.cpp *****************
+/***************** powder_even.cpp *****************/
 This piece of code is based on powder method, details 
 has been introduced in our paper, section 8.
 
