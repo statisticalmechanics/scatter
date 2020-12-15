@@ -2,6 +2,6 @@
 As they are based on OpenCL, they should be suitable for multiplatform. 
 For detailed instructions about compiling codes and setting up input parameters, go to each folder and read README file there.
 
-* Apart from the differences of hardware platforms (CPU and GPU) taht leads to high calculation effiency, 
+* Apart from the differences of hardware platforms (CPU and GPU) that leads to high calculation effiency, 
 codes in this directory also supports other functions, including thermalized non-ideal samples, different scattering potentials.
 Details can be found in each folder.
