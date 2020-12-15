@@ -24,7 +24,22 @@ to your device.
 
 
 ********************** SPECIFIC INFO **************************
+This piece of code is suitable for calculating the diffraction 
+pattern for a thermalized nonideal sample. It will calculate 
+the result for each configuration, and take the average as result. 
+Liquids, glasses or thermalized crystals can use this code.
+
+To generate a thermalized nonideal sample containing mutiple 
+configurations, one need to conduct molecular dynamic simulation.
+
 Input: config.xyz	supports multiple configurations
 Output: Ixy.dat		with the form "x y Intensity"
 Use 2d screen, supports forward & back reflection, supports
-point scattering potentials only
+point scattering potentials only.
+
+
+************************* INPUT *****************************
+1. Input number of configurations_
+  Number of configurations in the sample .xyz file.
+
+Other input parameters similar to previous codes.
