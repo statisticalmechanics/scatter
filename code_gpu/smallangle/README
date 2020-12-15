@@ -24,6 +24,11 @@ to your device.
 
 
 ********************** SPECIFIC INFO **************************
+This code genenrate results for small angle diffraction. Rather
+than asking for angle range andgiving results as 
+"intensity vs angle", this code asks for range of magnitude for
+q vectors and give results also based on q vector's magnitude.
+
 Input: config.xyz	supports multiple configurations
 Output: Sq.dat		with the form "q S(q)"
 Use powder method, supports point, sphere, gaussian scattering 
