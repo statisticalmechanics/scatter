@@ -2,13 +2,9 @@
 
 * Before start
 
-SINCE THE CODES IN THIS FOLDER ARE BASED ON CPU, THEY
-WILL TAKE VERY LONG TIME (maybe hours) TO RUN. TO SAVE YOUR TIME, I
-DO NOT SUGGEST TO RUN THE CODES IN THIS FOLDER.
-THERE ARE GPU BASED CODES AT
+The codes in this folder are CPU version. It generally takes hours to run for N = 10^3 particles. To save time, one can run the GPU version at
 https://github.com/statisticalmechanics/scatter/tree/master/code_gpu.
-WHICH ARE MUCH FASTER (only need one second), AND IT
-WILL BE BETTER TO LOOK AT THEM.
+which normally takes minutes for the same task.
 
 ## general introduction
 
