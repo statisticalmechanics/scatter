@@ -16,7 +16,7 @@ I will refer to the paper in later section as THE PAPER.
 
 ## whitexray.cpp
 
-This piece of code is based on Laue method, details 
+This piece of code is based on Laue method, where an x-ray beam with continuous frequency spectrum is used, and a single crystal is used as sample. Details 
 has been introduced in THE PAPER, section 6.1 & 5.1.
 
 - files needed:
@@ -57,8 +57,7 @@ has been introduced in THE PAPER, section 6.1 & 5.1.
 
 ## powder_even.cpp
 
-This piece of code is based on powder method, details 
-has been introduced in THE PAPER, section 8.
+This piece of code is based on powder method, where a powder sample is used for diffraction experiment, and a graph of Intensity vs twotheta (the diffraction angle) is expected. Details has been introduced in THE PAPER, section 8.
 
 - files needed:
 	- config.xyz: sample file, being put in the same
@@ -107,13 +106,13 @@ THE PAPER.
 	These three parameters are L, the linear dimension of the cubic 
 	simulation box, as described in THE PAPER. And ∆q is calculated 
 	from this value, also illustrated in paper, at section 7.3.
-	* 5. Input number of particles, any value bigger than 10000 is illegal_:
+	* 5 Input number of particles, any value bigger than 10000 is illegal_:
 	How many atoms we have in our sample.
-	* 6. Input upper bound for x side length of q cubic, any value bigger than %d is illegal_:
-	* 7. Input upper bound for y side length of q cubic, any value bigger than %d is illegal_:
-	* 8. Input upper bound for z side length of q cubic, any value bigger than %d is illegal_:
+	* 6 Input upper bound for x side length of q cubic, any value bigger than %d is illegal_:
+	* 7 Input upper bound for y side length of q cubic, any value bigger than %d is illegal_:
+	* 8 Input upper bound for z side length of q cubic, any value bigger than %d is illegal_:
 	These three parameters are n_x, n_y, n_z, also described in section 7.3.
-	* 9. Input resolution for drawing S(q) vs q_:
+	* 9 Input resolution for drawing S(q) vs q_:
 	This is also described in THE PAPER, section 7.3: “When reporting the result of S(q), 
 	one can assign q’s into bins of equal size or just use the 
 	original q values visited by the lattice points.” And this 
@@ -128,4 +127,6 @@ THE PAPER.
 	on similar q values. 
 
 ## visulization
-To visualize the result, use the matplot function in python.
+To visualize the result, use the matplot function in python. The scripts can be downloaded here:
+https://github.com/statisticalmechanics/scatter/tree/master/drawing
+You may need to modify the code in order to have a visible result.
