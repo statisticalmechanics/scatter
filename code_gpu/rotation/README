@@ -30,3 +30,20 @@ Use 2d factor, only supports forward reflection, only supports
 point scattering potentials
 
 rotation along y axis
+
+
+************************** INPUT *****************************
+1. Input wavelength_
+  Wavelength chosen for rotating the sample
+2. Input number of particles_
+  Number of particles in the sample.
+3. Input Height_
+4. Input D_
+  Height for the screen, and distance between the sample and
+  the screen (i.e. the radius for the cylinder), as shown in
+  FIG.7 in THE PAPER.
+5. rotation_increment
+  Increment for rotation angle, in unit of degree.
+6. rotation_range
+  Range for rotation, in unit of degree. e.g. 360 for rotating
+  the whole circle.
