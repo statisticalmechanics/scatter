@@ -8,7 +8,7 @@ The three pieces of codes here are program that uses
 CPU to calculate the diffraction pattern of an arbitrary 
 sample. Variables and principles are based on the paper
 https://arxiv.org/abs/2010.06126
-I will refer to the paper in later section as THE PAPER.
+(referred to as THE PAPER below).
 
 ## whitexray.cpp
 
