@@ -1,12 +1,8 @@
-# Illustrations for How to use the codes
-
-* Before start
-
-The codes in this folder are CPU version. It generally takes hours to run for N = 10^3 particles. To save time, one can run the GPU version at
-https://github.com/statisticalmechanics/scatter/tree/master/code_gpu.
-which normally takes minutes for the same task.
 
 ## general introduction
+The codes in this folder are CPU version. It generally takes hours to run for N = 10^3 particles. To save time, one can run the GPU version at
+https://github.com/statisticalmechanics/scatter/tree/master/code_gpu ,
+which normally takes minutes for the same task.
 
 The three pieces of codes here are program that uses 
 CPU to calculate the diffraction pattern of an arbitrary 
