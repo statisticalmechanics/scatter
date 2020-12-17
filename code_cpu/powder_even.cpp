@@ -21,7 +21,7 @@ int main(void) {
 	int num_points; // number of points on q sphere
 	int i; // index for points on sphere
 	int n; // particle index number
-	int num_Particles = MAX_PARTICLE_NUMBER;
+	int num_Particles = MAX_PARTICLE_NUMBER + 1;
 	
 	double phi = (sqrt((double)5) - 1) / 2;
 	double wavelength; // lambda
