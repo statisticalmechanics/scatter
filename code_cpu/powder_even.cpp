@@ -101,7 +101,7 @@ int main(void) {
 	
 	/*** loop over q spheres with different radius (i.e. different q's)****/
 	FILE *output;
-	if ((output = fopen("Sq.dat", "a")) == NULL)
+	if ((output = fopen("Sq.dat", "w")) == NULL)
 	{
 		printf("Open Failed.\n");
 		return 1;
