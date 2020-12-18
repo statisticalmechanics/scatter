@@ -153,7 +153,7 @@ int main(void) {
 
 
 	FILE *out_xyz_sq;
-	if ((out_xyz_sq = fopen("out.xyz", "a")) == NULL)
+	if ((out_xyz_sq = fopen("out.xyz", "w")) == NULL)
 	{
 		printf("Open Failed.\n");
 		return 1;
@@ -164,7 +164,7 @@ int main(void) {
 	fclose(out_xyz_sq);
 
 	FILE *out_q_sq;
-	if ((out_q_sq = fopen("out.q", "a")) == NULL)
+	if ((out_q_sq = fopen("out.q", "w")) == NULL)
 	{
 		printf("Open Failed.\n");
 		return 1;
@@ -175,7 +175,7 @@ int main(void) {
 	fclose(out_q_sq);
 
 	FILE *out_q_draw_sq;
-	if ((out_q_draw_sq = fopen("out.q.draw", "a")) == NULL)
+	if ((out_q_draw_sq = fopen("out.q.draw", "w")) == NULL)
 	{
 		printf("Open Failed.\n");
 		return 1;
