@@ -9,7 +9,9 @@ Division of Natural and Applied Sciences, Duke Kunshan University, Kunshan, Jian
 kai.zhang@dukekunshan.edu.cn
 
 J. Appl. Cryst. (2021). 54, 644-660
+
 https://doi.org/10.1107/S1600576721001965
+
 https://scripts.iucr.org/cgi-bin/paper?S1600576721001965
 
 
